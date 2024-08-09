@@ -1,0 +1,3 @@
+services:
+  ecoparseone.custom_controller:
+    class: Drupal\ecoparseone\Controller\EcoParseOneController

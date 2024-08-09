@@ -1,0 +1,4 @@
+name: EcoParseOne
+type: module
+description: 'Simple data parser for Drupal website'
+core_version_requirement: ^8 || ^9

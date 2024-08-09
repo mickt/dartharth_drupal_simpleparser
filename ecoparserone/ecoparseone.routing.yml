@@ -1,0 +1,15 @@
+ecoparseone.admin_form:
+  path: '/admin/config/system/admin-ecoparseone'
+  defaults:
+    _form: '\Drupal\ecoparseone\Form\EcoParseOneAdminForm'
+    _title: 'EcoParseOne Test Page'
+  requirements:
+    _permission: 'administer site configuration'
+
+ecoparseone.settings:
+  path: '/admin/config/system/ecoparseone'
+  defaults:
+    _form: '\Drupal\ecoparseone\Form\EcoParseOneSettingsForm'
+    _title: 'EcoParseOne Settings'
+  requirements:
+    _permission: 'administer site configuration'

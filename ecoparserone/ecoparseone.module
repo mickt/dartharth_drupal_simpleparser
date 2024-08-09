@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Routing\RouteSubscriberBase;
+use Symfony\Component\Routing\RouteCollection;
+
+/**
+ * Implements hook_cron().
+ */
+function ecoparseone_cron() {
+    $config = \Drupal::config('ecoparseone.settings');
+    if ($config->get('parsing_mode') === 'cron') {
+        $controller = \Drupal::service('ecoparseone.custom_controller');
+        $controller->checkNewArticles();
+    }
+}
+
+/**
+ * Route subscriber for EcoParseOne.
+ */
+class EcoParseOneRouteSubscriber extends RouteSubscriberBase {
+    /**
+     * {@inheritdoc}
+     */
+    protected function alterRoutes(RouteCollection $collection) {
+        // Custom logic for routing if needed.
+    }
+
+}

@@ -1,0 +1,6 @@
+ecoparseone.admin_settings:
+  title: 'EcoParseOne Settings'
+  description: 'Configure EcoParseOne module settings.'
+  parent: system.admin_config_system
+  route_name: ecoparseone.settings
+  weight: 100
